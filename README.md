@@ -16,7 +16,7 @@ CacheSim allows users to simulate cache behavior under different configurations 
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/cachesim.git
+    https://github.com/Daksh-Dhaker/Cache-Simulator.git
     ```
 
 2. Navigate to the project directory:
@@ -36,4 +36,11 @@ CacheSim allows users to simulate cache behavior under different configurations 
 After building the cache simulator, you can run it with the desired parameters and cache configurations. Here's the basic command structure:
 
 ```bash
-./cacheSim <sets> <blocks_per_set> <block_size> <write_policy> <replacement_policy> <tracefile>
+./cacheSim <sets> <blocks_per_set> <block_size> <write_policy> <replacement_policy> < <tracefile>
+```
+
+## Example
+
+```bash
+./cacheSim 256 4 16 write-allocate write-back lru < sometracefile
+```
